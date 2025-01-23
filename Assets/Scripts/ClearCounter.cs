@@ -1,9 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class ClearCounter : MonoBehaviour
+public class ClearCounter : BaseCounter, IKitchenObjectParent
 {
-    public void Interact()
+
+
+    public override void Interact(Player player)
     {
-        Debug.Log("Interacted with " + gameObject.name);
+
     }
 }
